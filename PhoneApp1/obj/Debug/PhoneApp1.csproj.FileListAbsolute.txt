@@ -1,0 +1,46 @@
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Assets\ApplicationIcon.png
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\PhoneApp1.dll
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\PhoneApp1.pdb
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\AppManifest.xaml
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Properties\WMAppManifest.xml
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\PhoneApp1_Debug_AnyCPU.xap
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\App.g.cs
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\MainPage.g.cs
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.g.resources
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.Resources.AppResources.resources
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.csproj.GenerateResource.Cache
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.dll
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.pdb
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\XapCacheFile.xml
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Sparrow.Chart.WP8.45.dll
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Sparrow.Chart.WP8.45.xml
+c:\users\kk\documents\visual studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.csprojResolveAssemblyReference.cache
+C:\Users\KK\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\Page1.g.cs
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\PhoneApp1.dll
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\PhoneApp1.pdb
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\AppManifest.xaml
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\PhoneApp1_Debug_AnyCPU.xap
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Sparrow.Chart.WP8.45.dll
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\Bin\Debug\Sparrow.Chart.WP8.45.xml
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.csprojResolveAssemblyReference.cache
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\App.g.cs
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\MainPage.g.cs
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\Page1.g.cs
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.g.resources
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.Resources.AppResources.resources
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.csproj.GenerateResource.Cache
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.dll
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.pdb
+C:\Users\Shubham Singh\Documents\Visual Studio 2013\Projects\PhoneApp1\PhoneApp1\obj\Debug\XapCacheFile.xml
