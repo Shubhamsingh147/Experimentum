@@ -27,7 +27,11 @@ namespace PhoneApp1
             var list = NavigationService.GetLastNavigationData();
             if (list != null)
             {
-                viewModel.Collection = (ObservableCollection<Models>)list;
+                ObservableCollection<Models> list_new = (ObservableCollection<Models>)list;
+                List<Models> list_sorted = list_new.OrderBy(o => o.X).ToList();
+                list_new = new ObservableCollection<Models>(list_sorted);
+                //viewModel.Collection = (ObservableCollection<Models>)list;
+                viewModel.Collection = list_new;
             }
             //viewModel.Collection.Add(new Models(3, 5));
             chart.DataContext = viewModel;
