@@ -13,6 +13,7 @@ using PhoneApp1.ViewModels;
 using System.Collections.ObjectModel;
 using Windows.Phone.Speech.Recognition;
 using Windows.Phone.Speech.Synthesis;
+using OxyPlot;
 
 namespace PhoneApp1
 {
@@ -22,13 +23,46 @@ namespace PhoneApp1
         List<double> xCoordinates = new List<double>();
         List<double> yCoordinates = new List<double>();
         List<String> coordinates = new List<string>();
-        public ObservableCollection<Models> CollectionCoordinates = new ObservableCollection<Models>();
+        public ObservableCollection<DataPoint> CollectionCoordinates = new ObservableCollection<DataPoint>();
         //private ViewModel viewModel = new ViewModel();
         // Constructor
         public MainPage()
         {
             InitializeComponent();
-            CollectionCoordinates.Add(new Models(0, 0));
+            CollectionCoordinates.Add(new DataPoint(0, 0));
+        }
+        private async void FindFrequency_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                SpeechRecognizerUI speechRecognition = new SpeechRecognizerUI();
+                speechRecognition.Settings.ListenText = "Enter Sentence!";
+                speechRecognition.Settings.ExampleText = "plot will show frequency of letters(lower case)";
+                SpeechSynthesizer synth = new SpeechSynthesizer();
+                await synth.SpeakTextAsync("Say something");
+                SpeechRecognitionUIResult recoResult = await speechRecognition.RecognizeWithUIAsync();
+
+                if (recoResult.ResultStatus == SpeechRecognitionUIStatus.Succeeded)
+                {
+                    int[] alpha = Enumerable.Repeat(0,26).ToArray();
+                    
+                    recoResult.RecognitionResult.Text.ToLower();
+                    for(int i=0 ; i < recoResult.RecognitionResult.Text.Length ; i++)
+                    {
+                        if(Char.IsLetter(recoResult.RecognitionResult.Text[i]))
+                            alpha[((int)recoResult.RecognitionResult.Text[i])-97]++;
+                    }
+                    for(int i=0;i<recoResult.RecognitionResult.Text.Length;i++)
+                    {
+                        DataPoint model = new DataPoint((char)(i + 97), alpha[i]);
+                        CollectionCoordinates.Add(model);
+                    }
+                }
+            }
+            catch(Exception r)
+            {
+
+            }
         }
         private async void SpeechToText_Click(object sender, RoutedEventArgs e)
         {
@@ -56,12 +90,12 @@ namespace PhoneApp1
                 coordinates.Add("X: " + x_val + "   Y: " + y_val);
                 listCoordinates.ItemsSource = null;
                 listCoordinates.ItemsSource = coordinates;
-                Models model = new Models(x_val, y_val);
+                DataPoint model = new DataPoint(x_val, y_val);
                 CollectionCoordinates.Add(model);
             }
             catch (Exception h)
             {
-                MessageBox.Show("in Catch");
+                MessageBox.Show("Some error, Say Clearly!");
             }
         }
 
@@ -70,18 +104,22 @@ namespace PhoneApp1
 
         }
 
-        private void addToPlotButton_Clik(object sender, RoutedEventArgs e)
+        private void addToPlotButton_Click(object sender, RoutedEventArgs e)
         {
-            int xCoordinate = Convert.ToInt32(tbx1.Text);
-            int yCoordinate = Convert.ToInt32(tbx2.Text);
-            xCoordinates.Add(xCoordinate);
-            yCoordinates.Add(yCoordinate);
-            coordinates.Add("X: "+tbx1.Text + "   Y: " + tbx2.Text);
-            listCoordinates.ItemsSource = null;
-            listCoordinates.ItemsSource = coordinates;
-            Models model = new Models(Convert.ToDouble(xCoordinate), Convert.ToDouble(yCoordinate));
-            CollectionCoordinates.Add(model);
-            //viewModel.Collection.Add(model);
+            if (tbx1.Text == "" || tbx2.Text == "")
+                SpeechToText_Click(sender , e);
+            else
+            {
+                int xCoordinate = Convert.ToInt32(tbx1.Text);
+                int yCoordinate = Convert.ToInt32(tbx2.Text);
+                xCoordinates.Add(xCoordinate);
+                yCoordinates.Add(yCoordinate);
+                coordinates.Add("X: " + tbx1.Text + "   Y: " + tbx2.Text);
+                listCoordinates.ItemsSource = null;
+                listCoordinates.ItemsSource = coordinates;
+                DataPoint model = new DataPoint(Convert.ToDouble(xCoordinate), Convert.ToDouble(yCoordinate));
+                CollectionCoordinates.Add(model);
+            }
             
         }
 
@@ -96,7 +134,7 @@ namespace PhoneApp1
 
         private void showPlot_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate("/Page1.xaml",CollectionCoordinates);
+            NavigationService.Navigate("/Page1.xaml?function=" + functiontbx.Text, CollectionCoordinates);
         }
 
         // Sample code for building a localized ApplicationBar
