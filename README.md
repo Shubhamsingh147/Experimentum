@@ -1,0 +1,1 @@
+A simple windows application for students who are interested in taking observations without taking their hand off the apparatus and just by voice, they see the graphs being formed on their cellphone with all the equations and points plotted. :D
